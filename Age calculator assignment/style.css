@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai 2', cursive
+}
+
+#date,
+#month,
+#year,
+#name {
+    outline: none;
+    border: 1px solid #bdbbc0;
+    height: 30px;
+    margin: 0 9px;
+    font-family: 'Baloo Bhai 2', cursive;
+    padding-left: 20px;
+    caret-color: #2f02ff;
+    padding-top: 6px;
+    border-radius: 20px;
+}
+
+#date,
+#month,
+#year {
+    width: 69px
+}
+
+.container {
+    margin: 5px auto;
+    margin-top: 5px
+}
+
+label {
+    pointer-events: none;
+    position: absolute;
+    margin-left: -73px;
+    margin-top: 3px;
+    font-family: 'Baloo Bhai 2', cursive;
+    opacity: .8
+}
+
+input:focus+label,
+input:valid+label {
+    transform: translateY(-13px);
+    background-color: #fff;
+    color: #2f02ff;
+    opacity: 1;
+    font-size: 12px
+}
+
+#name:focus,
+#date:focus,
+#month:focus,
+#year:focus {
+    border-color: #2f02ff
+}
+
+.label1 {
+    margin-left: -185px
+}
+
+.outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid #000;
+    margin: 35px 0;
+    padding: 15px 0
+}
+
+button.submit {
+    padding: 5px 15px
+}
+
+.submit:hover {
+    cursor: pointer;
+    background-color: #000;
+    color: #795151;
+    transition: .8s;
+    box-shadow: 0 0 25px #3d3d70;
+    border-block-color: rgb(250, 221, 221)
+}
+
+h2 {
+    text-align: center;
+    margin: 15px auto;
+    background: #a7bfd3;
+    width: 65%
+}
+
+.labelYear {
+    margin-left: -70px
+}
+
+.inner {
+    margin-top: 30px
+}
+
+.shake {
+    animation-name: shake;
+    animation-duration: .5s;
+    animation-iteration-count: 2
+}
+
+@keyframes shake {
+    30% {
+        transform: translateX(5px)
+    }
+
+    60% {
+        transform: translateX(0px)
+    }
+
+    90% {
+        transform: translateX(5px)
+    }
+}
